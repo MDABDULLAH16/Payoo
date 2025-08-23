@@ -11,8 +11,32 @@
       type="text/css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body>
-    <h1>Welcome to Payoo</h1>
+  <body class="bg-[#F4F5F7]">
+    <main
+      class="h-[100vh] w-[402px] mx-auto flex flex-col items-center justify-center"
+    >
+      <div
+        class="w-[316px] h-[150px] bg-[url('./assets/bg.png')] bg-cover flex justify-center items-center"
+      >
+        <img src="./assets/Group.png" alt="" />
+      </div>
+      <form class="flex flex-col bg-white p-8 space-y-2">
+        <label class="font-medium">Mobile Number</label>
+        <input
+          type="text"
+          placeholder="Your Mobile Number"
+          class="input p-2 bg-[#F4F5F7]"
+        />
+        <label class="font-medium" for="pin">4 Digit Pin</label>
+        <input
+          type="text"
+          placeholder="Your Pin"
+          class="input p-2 bg-[#F4F5F7]"
+        />
+        <button class="btn btn-primary rounded-full mt-4">Login</button>
+      </form>
+    </main>
   </body>
 </html>
