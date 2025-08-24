@@ -13,8 +13,8 @@
     <title>Payoo</title>
   </head>
   <body class="w-[450px] mx-auto">
-    <head>
-      <nav class="flex justify-between mt-8">
+    <head class="bg-white">
+      <nav class="flex justify-between mt-8 bg-white">
         <div class="flex">
           <img class="w-[50px] h-[48px]" src="./assets/Group.png" alt="logo" />
           <div>
@@ -29,8 +29,8 @@
     </head>
     <hr class="text-[#0808081A] mt-5" />
 
-    <main class="mt-8">
-      <section>
+    <main class="mt-8 bg-[#F4F5F7]">
+      <section class="bg-white">
         <div>
           <h1 class="text-3xl font-bold">🔥 Welcome to Payooo!</h1>
           <p class="text-[#08080880] mt-3 leading-7 text-xl">
@@ -40,43 +40,85 @@
         </div>
       </section>
       <!-- category -->
-      <section class="grid grid-cols-3 gap-4 mt-6">
-        <div
-          class="flex flex-col items-center gap-1 font-semibold border rounded-xl border-[#bb9b9b4e] bg-[#FFF] py-5 px-2.5"
+      <div class="">
+        <section class="grid grid-cols-3 py-6 gap-4 bg-white rounded-b-3xl">
+          <div
+            class="flex flex-col items-center gap-1 font-semibold border rounded-xl border-[#bb9b9b4e] bg-[#FFF] py-5 px-2.5"
+          >
+            <img src="./assets/wallet1.png" alt="" />
+            <p>Add Money</p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-1 font-semibold border rounded-xl border-[#bb9b9b4e] bg-[#FFF] py-5 px-2.5"
+          >
+            <img src="./assets/send1.png" alt="send1" />
+            <p>Cashout</p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-1 font-semibold border rounded-xl border-[#bb9b9b4e] bg-[#FFF] py-5 px-2.5"
+          >
+            <img src="./assets/money1.png" alt="money1" />
+            <p>Transfer Money</p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-1 font-semibold border rounded-xl border-[#bb9b9b4e] bg-[#FFF] py-5 px-2.5"
+          >
+            <img src="./assets/bonus1.png" alt="get bonus1" />
+            <p>Get Bonus</p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-1 font-semibold border rounded-xl border-[#0808081a] bg-[#FFF] py-5 px-2.5"
+          >
+            <img src="./assets/purse1.png" alt="purse1" />
+            <p>Pay Bil</p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-1 font-semibold border rounded-xl border-[#0808081a] bg-[#FFF] py-5 px-2.5"
+          >
+            <img src="./assets/transaction1.png" alt="" />
+            <p>Transaction</p>
+          </div>
+        </section>
+      </div>
+
+      <!-- add money form  -->
+      <section class="h-[100vh] p-6 bg-[#F4F5F7]">
+        <h1 class="font-semibold text-2xl my-4">Add Money</h1>
+        <form
+          class="flex flex-col bg-white p-6 mx-auto justify-center rounded-3xl"
         >
-          <img src="./assets/wallet1.png" alt="" />
-          <p>Add Money</p>
-        </div>
-        <div
-          class="flex flex-col items-center gap-1 font-semibold border rounded-xl border-[#bb9b9b4e] bg-[#FFF] py-5 px-2.5"
-        >
-          <img src="./assets/send1.png" alt="send1" />
-          <p>Cashout</p>
-        </div>
-        <div
-          class="flex flex-col items-center gap-1 font-semibold border rounded-xl border-[#bb9b9b4e] bg-[#FFF] py-5 px-2.5"
-        >
-          <img src="./assets/money1.png" alt="money1" />
-          <p>Transfer Money</p>
-        </div>
-        <div
-          class="flex flex-col items-center gap-1 font-semibold border rounded-xl border-[#bb9b9b4e] bg-[#FFF] py-5 px-2.5"
-        >
-          <img src="./assets/bonus1.png" alt="get bonus1" />
-          <p>Get Bonus</p>
-        </div>
-        <div
-          class="flex flex-col items-center gap-1 font-semibold border rounded-xl border-[#0808081a] bg-[#FFF] py-5 px-2.5"
-        >
-          <img src="./assets/purse1.png" alt="purse1" />
-          <p>Pay Bil</p>
-        </div>
-        <div
-          class="flex flex-col items-center gap-1 font-semibold border rounded-xl border-[#0808081a] bg-[#FFF] py-5 px-2.5"
-        >
-          <img src="./assets/transaction1.png" alt="" />
-          <p>Transaction</p>
-        </div>
+          <fieldset class="fieldset mx-auto w-full">
+            <legend class="fieldset-legend text-lg font-medium">
+              Select A Bank
+            </legend>
+            <select class="select bg-[#F4F5F7] w-full rounded-4xl">
+              <option disabled selected>Select Bank</option>
+              <option>City Bank</option>
+              <option>Bkash Add Money</option>
+              <option>Brac Bank</option>
+            </select>
+          </fieldset>
+          <label class="font-medium" for="banc acount number"
+            >Bank Account Number</label
+          >
+          <input
+            type="text"
+            placeholder="Enter 11 digit account number"
+            class="input bg-[#F4F5F7] w-full rounded-4xl"
+          />
+          <label class="font-medium" for="">Amount to Add</label>
+          <input
+            type="text"
+            placeholder="Add Amount to add Balance"
+            class="input bg-[#F4F5F7] w-full rounded-4xl"
+          />
+          <label class="font-medium" for="">Pin Number</label>
+          <input
+            type="text"
+            placeholder="Enter 4 digit Pin"
+            class="input bg-[#F4F5F7] w-full rounded-4xl"
+          />
+        </form>
       </section>
     </main>
   </body>
