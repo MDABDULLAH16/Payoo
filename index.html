@@ -25,18 +25,27 @@
       <form class="flex flex-col bg-white p-8 space-y-2">
         <label class="font-medium">Mobile Number</label>
         <input
-          type="text"
+          id="input-mobile"
+          type="number"
           placeholder="Your Mobile Number"
           class="input p-2 bg-[#F4F5F7]"
         />
         <label class="font-medium" for="pin">4 Digit Pin</label>
         <input
-          type="text"
+          id="pin"
+          type="number"
           placeholder="Your Pin"
           class="input p-2 bg-[#F4F5F7]"
         />
-        <button class="btn btn-primary rounded-full mt-4">Login</button>
+        <button
+          id="btn-login"
+          class="btn btn-primary rounded-full mt-4 bg-[#0874F2]"
+        >
+          Login
+        </button>
       </form>
     </main>
+
+    <script src="/script.js"></script>
   </body>
 </html>
