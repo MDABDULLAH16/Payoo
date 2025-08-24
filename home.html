@@ -18,7 +18,9 @@
         <div class="flex">
           <img class="w-[50px] h-[48px]" src="./assets/Group.png" alt="logo" />
           <div>
-            <h1 class="text-2xl font-extrabold">$<span>45000</span></h1>
+            <h1 class="text-2xl font-extrabold">
+              $<span id="available-money">45000</span>
+            </h1>
             <p class="text-[#08080880]">Available Balance</p>
           </div>
         </div>
@@ -92,34 +94,44 @@
               Select A Bank
             </legend>
             <select class="select bg-[#F4F5F7] w-full rounded-4xl">
-              <option disabled selected>Select Bank</option>
-              <option>City Bank</option>
-              <option>Bkash Add Money</option>
-              <option>Brac Bank</option>
+              <option disabled selected>Bangla Bank</option>
+              <option>Power Bank</option>
+              <option>Matir Bank</option>
+              <option>Baper Bank</option>
             </select>
           </fieldset>
           <label class="font-medium" for="banc acount number"
             >Bank Account Number</label
           >
           <input
-            type="text"
+            id="account-number"
+            type="number"
             placeholder="Enter 11 digit account number"
             class="input bg-[#F4F5F7] w-full rounded-4xl"
           />
           <label class="font-medium" for="">Amount to Add</label>
           <input
-            type="text"
+            id="input-amount"
+            type="number"
             placeholder="Add Amount to add Balance"
             class="input bg-[#F4F5F7] w-full rounded-4xl"
           />
           <label class="font-medium" for="">Pin Number</label>
           <input
+            id="pin"
             type="text"
             placeholder="Enter 4 digit Pin"
             class="input bg-[#F4F5F7] w-full rounded-4xl"
           />
+          <button
+            id="add-money"
+            class="btn btn-primary rounded-4xl mt-4 bg-[#0874F2]"
+          >
+            Add Money
+          </button>
         </form>
       </section>
     </main>
+    <script src="./home.js"></script>
   </body>
 </html>
